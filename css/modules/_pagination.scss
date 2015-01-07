@@ -1,0 +1,48 @@
+.pagination{
+	display: inline-block;
+	margin: 20px 0 80px;
+	
+	> span,
+	> a,
+	> i.nothere{
+		@extend %custom-bg;
+		
+		display: inline-block;
+		color: inherit;
+		text-decoration: none;
+		padding: 4px 10px;
+		font-family: $heading-font;
+		font-size: 18px;
+		font-weight:bold;
+		width: 30px;
+		text-align: center;
+		
+		i:before{
+			width: auto;
+			height: auto;
+		}
+	}
+}
+.post-pagination{
+	margin: 15px 0;
+	@extend %custom-bg;
+	font-family: $heading-font;
+	display: inline-block;
+	padding: 4px 10px;
+	
+	a{
+		padding: 0 4px;
+		color: inherit;
+		text-decoration: none;
+		transition: .2s opacity ease-out;
+		opacity: .6;
+		
+		&:hover{
+			opacity: 1;
+		}
+	}
+	
+	.page-links-title{
+		margin-right: 10px;
+	}
+}

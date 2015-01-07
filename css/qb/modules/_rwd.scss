@@ -1,0 +1,81 @@
+$breakpoints: null;
+
+@mixin register-breakpoints($registering...){
+	$sorted: 0;
+	$previous: 0;
+
+	@while $sorted < length($registering){
+		$min: 99999;
+		@each $amount in $registering{
+			@if $amount < $min{
+				@if $amount > $previous{
+					$min: $amount;
+				}
+			}
+		}
+		@if nth($breakpoints, 1) == null{
+			$breakpoints: $min;
+		}
+		@else{
+			$breakpoints: append($breakpoints, $min);
+		}
+		$previous: $min;
+		$sorted: $sorted+1;
+	}
+}
+
+@mixin width-above($breakpoint){
+	@media only screen and (min-width: $breakpoint){
+		@content;
+	}
+}
+@mixin width-below($breakpoint){
+	@media only screen and (max-width: $breakpoint){
+		@content;
+	}
+}
+@mixin width-between($start, $end){
+	@media only screen and (min-width: $start) and (max-width: $end - 1px){
+		@content;
+	}
+}
+@mixin width-matches($size){
+	$i: 1;
+	@each $breakpoint in $breakpoints{
+		@if ($breakpoint == $size){
+			//we've hit the correct breakpoint
+			@if $i == 1{
+				//smallest item in the list
+				@include width-below(nth($breakpoints, 2) - 1px){
+					@content;
+				}
+			}
+			@else if $i == length($breakpoints){
+				//biggest item in the list
+				@include width-above($size){
+					@content;
+				}
+			}
+			@else{
+				//any other item
+				@include width-between($size, nth($breakpoints, $i+1)){
+					@content;
+				}
+			}
+		}
+		$i: $i+1;
+	}
+}
+
+//prevents some elements from overflowing
+img, 
+table, 
+td, 
+blockquote, 
+code, 
+pre, 
+textarea, 
+input, 
+video{
+	max-width: 100%;
+}

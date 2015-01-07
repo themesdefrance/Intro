@@ -1,0 +1,50 @@
+@import "typicons";
+
+$body-copy-font: 'Quicksand';
+$heading-font: 'Quicksand';
+$grid-collapse-below: 800px;
+$main-color: #ff625b;
+$heading-font-color:#38455b;
+$footer-font-color:#f7f7f7;
+
+$z-menu: 500;
+
+@import "qb/all";
+
+//these palceholder classes do nothing, they just serve as reference for stuff done thorugh php
+%custom-bg{}
+%custom-color{}
+%custom-border{}
+
+%button{
+	background: $main-color;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 6px 16px;
+	font-family: $heading-font;
+	transition: background 0.2s ease-out;
+	
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.button,
+html a.button,
+input[type='submit'],
+input[type='button']{
+	@extend %button;
+}
+
+%quote{
+	&:before{
+		content: '“';
+		font-size:40px;
+	}
+	
+	&:after{
+		content: '”';
+		font-size:40px;
+	}
+}

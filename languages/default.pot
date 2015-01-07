@@ -1,0 +1,563 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Intro\n"
+"POT-Creation-Date: 2015-01-06 09:22+0100\n"
+"PO-Revision-Date: 2015-01-06 09:22+0100\n"
+"Last-Translator: Alex Thèmes de France <alex@themesdefrance.fr>\n"
+"Language-Team: Thèmes de France <bonjour@themesdefrance.fr>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:15
+msgid "Oops, there is nothing here..."
+msgstr ""
+
+#: ../404.php:24
+#, php-format
+msgid ""
+"The page you requested does not seem to exist. You can go back to <a href="
+"\"%s\">the home page</a> or browse the archives :"
+msgstr ""
+
+#: ../comments.php:22
+msgid "Previous comments"
+msgstr ""
+
+#: ../comments.php:25
+msgid "Next comments"
+msgstr ""
+
+#: ../comments.php:33
+msgid "Be the first to post a comment."
+msgstr ""
+
+#: ../comments.php:41
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-body.php:15 ../content-body.php:32
+msgid "Read more"
+msgstr ""
+
+#: ../content-footer.php:19
+msgid "Pages:"
+msgstr ""
+
+#: ../content-header.php:15
+msgid "Published "
+msgstr ""
+
+#: ../content-header.php:19
+msgid "on"
+msgstr ""
+
+#: ../content-header.php:29
+msgid "by"
+msgstr ""
+
+#: ../content-header.php:41
+msgid "in"
+msgstr ""
+
+#: ../content-header.php:51
+msgid "No Comment"
+msgstr ""
+
+#: ../content-header.php:51
+msgid "One Comment"
+msgstr ""
+
+#: ../content-header.php:51
+msgid "% Comments"
+msgstr ""
+
+#: ../content-header.php:57
+msgid "Edit"
+msgstr ""
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../content-none.php:23
+msgid ""
+"Sorry but no post match what you are looking for. Try some new keywords "
+"below :"
+msgstr ""
+
+#: ../content-none.php:28
+#, php-format
+msgid ""
+"Sorry but no post match what you are looking for. You should <a href=\"%1$s"
+"\">go back to the homepage</a> and start again."
+msgstr ""
+
+#: ../footer.php:27 ../admin/index.php:52
+#, php-format
+msgid ""
+"<strong>%s</strong> - Intro by <a href=\"https://www.themesdefrance.fr/\" "
+"target=\"_blank\">Themes de France</a>"
+msgstr ""
+
+#: ../footer.php:50
+msgid "Back to the top"
+msgstr ""
+
+#: ../functions.php:43
+msgid "Main menu"
+msgstr ""
+
+#: ../functions.php:44
+msgid "Footer menu"
+msgstr ""
+
+#: ../functions.php:49 ../admin/index.php:44
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:51
+msgid "Add widgets in the sidebar."
+msgstr ""
+
+#: ../functions.php:59 ../admin/index.php:49
+msgid "Footer"
+msgstr ""
+
+#: ../functions.php:61
+msgid "Add widgets in the footer."
+msgstr ""
+
+#: ../functions.php:88
+msgid "Post width"
+msgstr ""
+
+#: ../functions.php:89
+msgid "Fullpage width"
+msgstr ""
+
+#: ../functions.php:139 ../admin/index.php:2
+msgid "Intro Settings"
+msgstr ""
+
+#: ../functions.php:147
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: ../functions.php:332
+msgid "Themes de France"
+msgstr ""
+
+#: ../functions.php:355
+#, php-format
+msgid ""
+"To get Intro support and automatic updates, <a href='%s' "
+"target='__blank'>purchase a licence key on Themes de France</a> | <a "
+"href='%s'>I'm not interested</a>"
+msgstr ""
+
+#: ../header-bar.php:7 ../header-bar.php:62
+msgid "Blog"
+msgstr ""
+
+#: ../header-bar.php:16
+msgid "Posts from "
+msgstr ""
+
+#: ../header-bar.php:22
+msgid "Posts tagged by "
+msgstr ""
+
+#: ../header-bar.php:28
+#, php-format
+msgid "Search results for : %s"
+msgstr ""
+
+#: ../header-bar.php:36
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../header-bar.php:42
+msgid "Archives from "
+msgstr ""
+
+#: ../header-bar.php:46 ../header-bar.php:50
+msgid "Archives for "
+msgstr ""
+
+#: ../header-bar.php:54
+msgid "Archives"
+msgstr ""
+
+#: ../header.php:27
+msgid "Your browser is <em>too old !"
+msgstr ""
+
+#: ../header.php:27
+msgid "Update your browser"
+msgstr ""
+
+#: ../header.php:27
+msgid "or"
+msgstr ""
+
+#: ../header.php:27
+msgid "Install Google Chrome Frame"
+msgstr ""
+
+#: ../header.php:27
+msgid "to display this website correctly"
+msgstr ""
+
+#: ../searchform.php:3 ../searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:4
+msgid "Search ..."
+msgstr ""
+
+#: ../template-fullwidth.php:5
+msgid "Fullwidth"
+msgstr ""
+
+#: ../admin/EDD_SL_Theme_Updater.php:56
+msgid ""
+"Updating this theme will lose any customizations you have made. 'Cancel' to "
+"stop, 'OK' to update."
+msgstr ""
+
+#: ../admin/EDD_SL_Theme_Updater.php:61
+#, php-format
+msgid ""
+"<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
+"title=\"%4s\">Discover what's new</a> or <a href=\"%5$s\"%6$s>Update now !</"
+"a>."
+msgstr ""
+
+#: ../admin/index.php:9
+msgid "General"
+msgstr ""
+
+#: ../admin/index.php:10
+msgid "Addons"
+msgstr ""
+
+#: ../admin/index.php:22
+msgid "License"
+msgstr ""
+
+#: ../admin/index.php:23
+msgid ""
+"Purchase a licence key in order to receive Intro updates and get access to "
+"support. Then paste it in the field above."
+msgstr ""
+
+#: ../admin/index.php:23
+msgid "Get Intro updates & support"
+msgstr ""
+
+#: ../admin/index.php:31
+msgid "Main color"
+msgstr ""
+
+#: ../admin/index.php:32
+msgid "This color will be used across your website for buttons, links, etc."
+msgstr ""
+
+#: ../admin/index.php:36
+msgid "Logo"
+msgstr ""
+
+#: ../admin/index.php:37
+msgid ""
+"Upload a logo to display in the header (if you don't have a logo, the name "
+"of your website will be displayed instead)."
+msgstr ""
+
+#: ../admin/index.php:45
+msgid "Display a sidebar on the content's right across your website."
+msgstr ""
+
+#: ../admin/index.php:50
+msgid ""
+"Left footer content. The following HTML tags are allowed : &lt;a href=&quot;"
+"LINK&quot;&gt;TEXT_LINK&lt;/a&gt;, &lt;strong&gt;BOLD_TEXT&lt;/strong&gt;, "
+"&lt;em&gt;ITALIC_TEXT&lt;/em&gt;, &lt;img src=&quot;IMAGE_URL&quot;&gt;."
+msgstr ""
+
+#: ../admin/index.php:57
+msgid "Additionnal CSS"
+msgstr ""
+
+#: ../admin/index.php:58
+msgid ""
+"CSS rules added in this field will be added to your site. If you have too "
+"many updates, you should download and install the Intro child theme from"
+msgstr ""
+
+#: ../admin/index.php:58
+msgid "your Themes de France account"
+msgstr ""
+
+#: ../admin/index.php:71
+msgid ""
+"Do you know that Intro can be extended with addons ? Check the addons "
+"available below :"
+msgstr ""
+
+#: ../admin/index.php:85
+msgid "Save changes"
+msgstr ""
+
+#: ../admin/index.php:96
+msgid "Any questions on Intro ? Go to the"
+msgstr ""
+
+#: ../admin/index.php:96
+msgid "Themes de France support page."
+msgstr ""
+
+#: ../admin/index.php:100
+msgid "In order to get support, you need to purchase"
+msgstr ""
+
+#: ../admin/index.php:100
+msgid "the full version."
+msgstr ""
+
+#: ../admin/index.php:104
+msgid "If you like Intro, you should"
+msgstr ""
+
+#: ../admin/index.php:104
+msgid "follow us on Facebook"
+msgstr ""
+
+#: ../admin/Cocorico/plugins/CocoricoComponents.php:181
+msgid "Save all changes"
+msgstr ""
+
+#: ../admin/Cocorico/plugins/CocoricoComponents.php:275
+msgid "Select"
+msgstr ""
+
+#: ../admin/Cocorico/plugins/CocoricoComponents.php:322
+msgid "Delete"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:43
+msgid "Set up the main menu"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:154
+msgid "Pingback:"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:165
+msgid "Your comment is waiting for moderation."
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:175
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:175
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:178
+#, php-format
+msgid "Published on %s at %s"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:193
+msgid "Reply"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:216
+#, php-format
+msgid "Reply to %s"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:217
+msgid "Post comment"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:221
+#: ../admin/functions/intro-functions.php:224
+msgid "Name"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:224
+#: ../admin/functions/intro-functions.php:231
+msgid "required"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:228
+#: ../admin/functions/intro-functions.php:231
+msgid "Email"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:234
+#: ../admin/functions/intro-functions.php:237
+msgid "Website"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:240
+msgid "Comment"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:300
+msgid "There is no archives to display."
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:350
+msgid "Intro bbPress Addon"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:358
+msgid ""
+"Intro bbPress Addon bring custom CSS styling to Intro to get a perfect "
+"bbPress integration."
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:362
+msgid "Get Intro bbPress Addon"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:368
+msgid "Intro bbPress Addon is installed. Thanks for using it !"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:370
+msgid "If you have some time, help us to improve it by giving some feedback."
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:374
+msgid "Give feedback on Intro bbPress Addon"
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:8
+msgid "Link"
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:17
+msgid "Quote"
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:26
+msgid "Video"
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:47
+msgid "Link to feature"
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:48
+msgid ""
+"Add a link to feature for this post. You're free to talk about it in the "
+"post content."
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:65
+msgid "Quote to feature"
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:66
+msgid "Add some wise words and talk about it in the post content."
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:72
+msgid "Quote author (optional)"
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:73
+msgid "Be nice and don't forget to credit the quote author."
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:91
+msgid "Video to feature"
+msgstr ""
+
+#: ../admin/metaboxes/post-formats.php:92
+msgid "Add a video link from Youtube, Dailymotion or Vimeo."
+msgstr ""
+
+#: ../admin/widgets/calltoaction.php:10
+msgid "Intro - Call to action"
+msgstr ""
+
+#: ../admin/widgets/calltoaction.php:11
+msgid "Add a call to action in the sidebar."
+msgstr ""
+
+#: ../admin/widgets/calltoaction.php:32
+msgid "Click here"
+msgstr ""
+
+#: ../admin/widgets/calltoaction.php:61 ../admin/widgets/video.php:67
+msgid "Title:"
+msgstr ""
+
+#: ../admin/widgets/calltoaction.php:65
+msgid "Call to action incentive:"
+msgstr ""
+
+#: ../admin/widgets/calltoaction.php:69
+msgid "Call to action destination (url):"
+msgstr ""
+
+#: ../admin/widgets/calltoaction.php:73
+msgid "Button's label:"
+msgstr ""
+
+#: ../admin/widgets/social.php:23
+msgid "Intro - Social"
+msgstr ""
+
+#: ../admin/widgets/social.php:24
+msgid "Display links to your social profiles."
+msgstr ""
+
+#: ../admin/widgets/social.php:65 ../admin/widgets/video.php:44
+msgid "Please enter a valid url"
+msgstr ""
+
+#: ../admin/widgets/social.php:81
+msgid "More networks"
+msgstr ""
+
+#: ../admin/widgets/video.php:11
+msgid "Intro - Video"
+msgstr ""
+
+#: ../admin/widgets/video.php:12
+msgid "Add a video from Youtube, Dailymotion or Vimeo."
+msgstr ""
+
+#: ../admin/widgets/video.php:32
+msgid ""
+"To display a video, please add a Youtube, Dailymotion or Vimeo URL in the "
+"widget settings."
+msgstr ""
+
+#: ../admin/widgets/video.php:50
+msgid "This video url doesn't seem to exist."
+msgstr ""
+
+#: ../admin/widgets/video.php:71
+msgid "Video URL (Youtube, Dailymotion or Vimeo):"
+msgstr ""

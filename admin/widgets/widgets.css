@@ -1,0 +1,13 @@
+.introsocial-toggle{
+	display:none;
+}
+.introsocial-toggle.open{
+	display:block;
+}
+.introsocial-toggle-link{
+	display:block;
+	float:right;
+	background:url("images/arrows.png") no-repeat scroll 6px 0 transparent;
+	width:24px;
+	height:26px;
+}
