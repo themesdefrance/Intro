@@ -9,11 +9,7 @@
 }
 
 .content{
-	padding-top: 50px;
-	
-	@include width-below($grid-collapse-below){
-		padding-top: 0;
-	}
+	padding-bottom: 60px;
 }
 
 .wrapper{
@@ -42,7 +38,7 @@ $menu-width: 280px;
 	z-index: $z-menu;
 	width: 100%;
 	font-weight: bold;
-	border-bottom: 1px solid rgba(56, 69, 91, 0.1);
+	border-bottom: 1px solid rgba(56,69,91,0.1);
 	
 	@extend %custom-bg;
 	@extend .clearfix;
@@ -142,7 +138,6 @@ $menu-width: 280px;
 			&:hover {
 				> a{
 					color:$main-color;
-					border-bottom-color:$main-color;
 				}
 				
 				.sub-menu{
@@ -153,7 +148,6 @@ $menu-width: 280px;
 			@include width-above($grid-collapse-below){
 				&.current-menu-item a{
 					color:$main-color;
-					border-bottom-color:$main-color;
 				}
 			}
 		}
@@ -162,14 +156,12 @@ $menu-width: 280px;
 			display: inline-block;
 			color: $heading-font-color;
 			padding:40px 0px 37px;
-			border-bottom: 3px solid transparent;
 			text-decoration: none;
 			font-size: 16px;
 			
 			@include width-below($grid-collapse-below){
 				display: block;
 				padding: 20px 0px 17px;
-				border-color: transparent !important;
 			}
 		}
 	}
@@ -201,7 +193,7 @@ $menu-width: 280px;
 		width: 100%;
 		
 		&:hover > a{
-			border-bottom-color:transparent !important;
+			
 		}
 		
 	}
@@ -223,15 +215,13 @@ $menu-width: 280px;
 }
 
 .header-bar {
-	padding-top: 50px;
-	font-weight: bold;
 	
 	.header-bar-title {
+		padding: 50px 0;
 		font-size: 28px;
 		font-weight: bold;
 		color: $heading-font-color;
 		text-transform: uppercase;
-		letter-spacing: -1px;
 	}
 	
 	#site-breadcrumbs {
@@ -248,42 +238,6 @@ $menu-width: 280px;
 	}
 }
 
-
-//this would be a no-js version of the menu hovering
-//.top-level-menu > li:hover .sub-menu{
-//	display: block;
-//}
-/*
-.site-header .search-wrapper,
-.site-header .social-menu{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	z-index: 100;
-	
-	@include width-below($grid-collapse-below){
-		position: static;
-	}
-}
-.site-header .search-wrapper{
-	left: 0;
-	width: 15%;
-	max-width: 250px;
-	display: flex;
-	align-items: center;
-	
-	&.active{
-		background: #fff;
-	}
-	
-	@include width-below($grid-collapse-below){
-		width: 100%;
-		max-width: none;
-		align-items: flex-start;
-		padding: 10px 0;
-	}
-}
-*/
 .search-wrapper .search-form{
 	display: none;
 }

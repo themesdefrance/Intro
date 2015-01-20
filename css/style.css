@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: 
 Text Domain: intro
 */
-.typcn:before, .entry-thumbnail .entry-permalink:before, .entry-link a:before, .typcn:after, .entry-thumbnail .entry-permalink:after, .entry-link a:after {
+.typcn:before, .entry-link a:before, .typcn:after, .entry-link a:after {
   font-family: 'typicons';
   font-style: normal;
   font-weight: normal;
@@ -643,7 +643,7 @@ Text Domain: intro
 .typcn-plug:before {
   content: '\e0cd'; }
 
-.typcn-plus-outline:before, .entry-thumbnail .entry-permalink:before {
+.typcn-plus-outline:before {
   content: '\e0ce'; }
 
 .typcn-plus:before {
@@ -1071,10 +1071,10 @@ table {
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: 'Quicksand'; }
+  font-family: 'Open Sans'; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Quicksand';
+  font-family: 'Open Sans';
   font-weight: normal; }
 
 ul, ol {
@@ -1282,7 +1282,7 @@ img, table, td, blockquote, code, pre, textarea, input, video {
   color: #fff;
   font-size: 16px;
   padding: 6px 16px;
-  font-family: 'Quicksand';
+  font-family: 'Open Sans';
   transition: background 0.2s ease-out; }
   .button:hover, .comment-form input[type="submit"]:hover, input[type='submit']:hover, input[type='button']:hover, .widget_calendar #next a:hover, .widget_calendar #prev a:hover, .widget_introcalltoaction a.button:hover {
     text-decoration: none; }
@@ -1300,10 +1300,7 @@ img, table, td, blockquote, code, pre, textarea, input, video {
   width: 100%; }
 
 .content {
-  padding-top: 50px; }
-  @media only screen and (max-width: 800px) {
-    .content {
-      padding-top: 0; } }
+  padding-bottom: 60px; }
 
 .wrapper {
   max-width: 1140px;
@@ -1362,7 +1359,7 @@ img, table, td, blockquote, code, pre, textarea, input, video {
   .site-header .main-menu {
     width: 70%;
     float: left;
-    font-family: 'Quicksand'; }
+    font-family: 'Open Sans'; }
     @media only screen and (max-width: 800px) {
       .site-header .main-menu {
         text-align: left;
@@ -1393,27 +1390,23 @@ img, table, td, blockquote, code, pre, textarea, input, video {
       .site-header .main-menu li:last-child {
         padding-right: 0; }
       .site-header .main-menu li:hover > a {
-        color: #ff625b;
-        border-bottom-color: #ff625b; }
+        color: #ff625b; }
       .site-header .main-menu li:hover .sub-menu {
         display: block; }
       @media only screen and (min-width: 800px) {
         .site-header .main-menu li.current-menu-item a {
-          color: #ff625b;
-          border-bottom-color: #ff625b; }
+          color: #ff625b; }
  }
     .site-header .main-menu a {
       display: inline-block;
       color: #38455b;
       padding: 40px 0px 37px;
-      border-bottom: 3px solid transparent;
       text-decoration: none;
       font-size: 16px; }
       @media only screen and (max-width: 800px) {
         .site-header .main-menu a {
           display: block;
-          padding: 20px 0px 17px;
-          border-color: transparent !important; } }
+          padding: 20px 0px 17px; } }
 
 .site-header .sub-menu {
   position: absolute;
@@ -1437,8 +1430,6 @@ img, table, td, blockquote, code, pre, textarea, input, video {
     opacity: 1;
     display: inline-block;
     width: 100%; }
-    .site-header .sub-menu li:hover > a {
-      border-bottom-color: transparent !important; }
   .site-header .sub-menu a {
     color: #38455b;
     font-size: 14px;
@@ -1452,54 +1443,20 @@ img, table, td, blockquote, code, pre, textarea, input, video {
       padding-left: 30px;
       opacity: 1; } }
 
-.header-bar {
-  padding-top: 50px;
-  font-weight: bold; }
-  .header-bar .header-bar-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #38455b;
-    text-transform: uppercase;
-    letter-spacing: -1px; }
-  .header-bar #site-breadcrumbs {
-    margin: 10px 0;
-    font-size: 14px; }
-    .header-bar #site-breadcrumbs a {
-      text-decoration: none; }
-      .header-bar #site-breadcrumbs a:hover {
-        text-decoration: underline; }
+.header-bar .header-bar-title {
+  padding: 50px 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #38455b;
+  text-transform: uppercase; }
+.header-bar #site-breadcrumbs {
+  margin: 10px 0;
+  font-size: 14px; }
+  .header-bar #site-breadcrumbs a {
+    text-decoration: none; }
+    .header-bar #site-breadcrumbs a:hover {
+      text-decoration: underline; }
 
-/*
-.site-header .search-wrapper,
-.site-header .social-menu{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	z-index: 100;
-	
-	@include width-below($grid-collapse-below){
-		position: static;
-	}
-}
-.site-header .search-wrapper{
-	left: 0;
-	width: 15%;
-	max-width: 250px;
-	display: flex;
-	align-items: center;
-	
-	&.active{
-		background: #fff;
-	}
-	
-	@include width-below($grid-collapse-below){
-		width: 100%;
-		max-width: none;
-		align-items: flex-start;
-		padding: 10px 0;
-	}
-}
-*/
 .search-wrapper .search-form {
   display: none; }
 
@@ -1570,7 +1527,7 @@ body.admin-bar .site-header {
 .site-footer a {
   color: #f7f7f7;
   text-decoration: none;
-  font-family: 'Quicksand';
+  font-family: 'Open Sans';
   font-weight: bold; }
   .site-footer a:hover {
     text-decoration: underline; }
@@ -1662,19 +1619,9 @@ body.admin-bar .site-header {
     position: relative;
     overflow: hidden;
     transition: 0.2s opacity ease-out; }
-    .entry-thumbnail .entry-permalink:before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 70px;
-      text-decoration: none;
-      opacity: 0; }
     .entry-thumbnail .entry-permalink img {
       opacity: 1;
       transition: 0.2s opacity ease-out; }
-    .entry-thumbnail .entry-permalink:hover:before {
-      opacity: 1; }
   .entry-thumbnail:hover {
     /*color:transparent;*/ }
     .entry-thumbnail:hover img, .entry-thumbnail:hover iframe {
@@ -1810,7 +1757,7 @@ body.admin-bar .site-header {
     line-height: 1.1;
     margin-bottom: 10px; }
   .entry-content blockquote {
-    font-family: 'Quicksand';
+    font-family: 'Open Sans';
     font-size: 24px;
     margin: 30px 0 30px 30px;
     line-height: 1.4; }
@@ -1821,7 +1768,7 @@ body.admin-bar .site-header {
       padding-right: 10px; }
     .entry-content blockquote cite {
       display: block;
-      font-family: 'Quicksand';
+      font-family: 'Open Sans';
       font-size: 16px;
       margin-top: 20px;
       font-style: normal;
@@ -1937,7 +1884,7 @@ body.admin-bar .site-header {
   color: #777777;
   margin-bottom: 10px; }
   .comment-header .comment-author {
-    font-family: 'Quicksand';
+    font-family: 'Open Sans';
     font-size: 20px; }
     .comment-header .comment-author a {
       font-style: normal;
@@ -2043,7 +1990,7 @@ body.admin-bar .site-header {
     text-decoration: none; }
 
 .widget_calendar caption {
-  font-family: 'Quicksand';
+  font-family: 'Open Sans';
   font-size: 16px;
   margin-bottom: 5px;
   padding: 10px 0;
@@ -2101,13 +2048,13 @@ body.admin-bar .site-header {
 
 .pagination {
   display: inline-block;
-  margin: 20px 0 80px; }
+  margin: 20px 0; }
   .pagination > span, .pagination > a, .pagination > i.nothere {
     display: inline-block;
     color: inherit;
     text-decoration: none;
     padding: 4px 10px;
-    font-family: 'Quicksand';
+    font-family: 'Open Sans';
     font-size: 18px;
     font-weight: bold;
     width: 30px;
@@ -2118,7 +2065,7 @@ body.admin-bar .site-header {
 
 .post-pagination {
   margin: 15px 0;
-  font-family: 'Quicksand';
+  font-family: 'Open Sans';
   display: inline-block;
   padding: 4px 10px; }
   .post-pagination a {

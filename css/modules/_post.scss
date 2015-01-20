@@ -32,27 +32,9 @@
 		overflow: hidden;
 		transition:.2s opacity ease-out;
 
-		@extend .typcn;
-		@extend .typcn-plus-outline;
-
-		&:before{
-			position: absolute;
-			top:50%;
-			left:50%;
-			transform: translate(-50%, -50%);
-			font-size:70px;
-			text-decoration:none;
-			opacity:0;
-
-		}
-
 		img{
 			opacity:1;
 			transition:.2s opacity ease-out;
-		}
-
-		&:hover:before{
-			opacity:1;
 		}
 	}
 

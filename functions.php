@@ -140,7 +140,7 @@ if (!function_exists('intro_enqueue')){
 
 		wp_register_script('intro', get_template_directory_uri().'/js/min/intro.min.js', array('jquery'), false, true);
 
-		wp_enqueue_style( 'intro-fonts', '//fonts.googleapis.com/css?family=Quicksand:400,700&subset=latin,latin-ext');
+		wp_enqueue_style( 'intro-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext');
 
 		//main stylesheet
 		wp_enqueue_style('stylesheet', get_stylesheet_directory_uri().'/style.css', array(), false);
