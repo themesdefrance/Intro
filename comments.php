@@ -21,9 +21,9 @@
 	<?php if (have_comments()): ?>
 	
 		<h2 class="comments-title">
-			<?php
-               printf(_n(apply_filters('intro_one_comment', '1 comment was added, add yours.'), apply_filters('intro_several_comments', '%1$s comments were added, add yours.'), get_comments_number(), 'intro'), number_format_i18n(get_comments_number()));
-            ?>
+			
+			<?php printf(_n('1 comment was added, add yours.', '%s comments were added, add yours.', get_comments_number(), 'intro'),number_format_i18n(get_comments_number())); ?>
+			
 		</h2><!-- END .comments-title -->
 		
 		<?php do_action('intro_before_comment_form'); ?>
@@ -59,7 +59,7 @@
 	<?php else:  ?>
 	
 		<h2 class="comments-title">
-			<?php apply_filters('intro_first_comment', __('Be the first to post a comment.', 'intro')); ?>
+			<?php echo apply_filters('intro_first_comment', __('Be the first to post a comment.', 'intro')); ?>
 		</h2>
 		
 		<?php do_action('intro_before_comment_form'); ?>

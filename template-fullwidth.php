@@ -19,6 +19,8 @@ __('Fullwidth','intro');
 
 <?php get_header(); ?>
 
+<?php get_template_part('header', 'bar'); ?>
+
 <?php do_action('intro_before_main'); ?>
 
 <section class="content">
@@ -35,7 +37,7 @@ __('Fullwidth','intro');
 			
 					while (have_posts()) : the_post();
 	
-						get_template_part('content');
+						get_template_part('content','page');
 				
 						endwhile;
 			

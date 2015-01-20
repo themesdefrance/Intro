@@ -6,9 +6,6 @@
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  * @since 1.0
  */
-?>
-
-<?php
 	
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -16,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 // Define theme constants (relative to licensing)
 define('INTRO_STORE_URL', 'https://www.themesdefrance.fr');
 define('INTRO_THEME_NAME', 'Intro');
-define('INTRO_THEME_VERSION', '0.0.1');
+define('INTRO_THEME_VERSION', '1.0.0');
 define('INTRO_LICENSE_KEY', 'intro_license_edd');
 
 // Include theme updater (relative to licensing)
@@ -29,26 +26,15 @@ if(is_admin())
 	require_once 'admin/Cocorico/Cocorico.php';
 
 // Load the widgets
-require_once 'admin/widgets/social.php';
-require_once 'admin/widgets/calltoaction.php';
-require_once 'admin/widgets/video.php';
+require 'admin/widgets/social.php';
+require 'admin/widgets/calltoaction.php';
+require 'admin/widgets/video.php';
 
 // Load other theme functions
-require_once 'admin/functions/intro-functions.php';
+require 'admin/functions/intro-functions.php';
 
-/**
- * Refresh the permalink structure
- *
- * @since 1.0
- * @return void
- */
-if (!function_exists('intro_activation')){
-	function intro_activation(){
-		global $wp_rewrite;
-		$wp_rewrite->flush_rules();
-	}
-}
-add_action('after_switch_theme', 'intro_activation');
+//Refresh the permalink structure
+add_action('after_switch_theme', 'flush_rewrite_rules');
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -100,7 +86,7 @@ if (!function_exists('intro_setup')){
 		add_image_size('intro-post-thumbnail-full', 1140, 605, true);
 
 		// Add Meta boxes for post formats
-		require_once 'admin/metaboxes/post-formats.php';
+		require 'admin/metaboxes/post-formats.php';
 
 	}
 }
@@ -350,8 +336,8 @@ if(!function_exists('intro_user_styles')){
 				box-shadow: 0 0 5px <?php echo $color; ?>;
 			}
 			
-			.site-header .main-menu li.current-menu-item a,
-			.site-header .main-menu li:hover > a{
+			.site-header .main-menu ul > li.current-menu-item a,
+			.site-header .main-menu ul > li:hover > a{
 				border-bottom-color:<?php echo $color; ?>;	
 			}
 
@@ -414,7 +400,7 @@ if(!function_exists('intro_admin_notice')){
 		global $current_user;
         $user_id = $current_user->ID;
 		
-		if(current_user_can('level_10')){
+		if(current_user_can('edit_theme_options')){
 		
 			if(!get_option('intro_license_status')){
 				

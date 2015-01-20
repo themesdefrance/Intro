@@ -10,6 +10,8 @@
 
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 
+<?php get_template_part('header', 'bar'); ?>
+
 <?php get_header(); ?>
 
 <?php do_action('intro_before_main'); ?>

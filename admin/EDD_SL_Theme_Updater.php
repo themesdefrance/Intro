@@ -9,11 +9,7 @@
  * @link 		http://easydigitaldownloads.com/extension/software-licenses
  * @since 1.0
  */
-?>
 
-<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
-
-<?php
 class EDD_SL_Theme_Updater {
 	private $remote_api_url;
 	private $request_data;

@@ -28,7 +28,7 @@
 				
 				<h1 class="entry-title">
 					
-					<a href="<?php echo $link; ?>" title="<?php the_title(); ?>" rel="external" target="_blank">
+					<a href="<?php echo $link; ?>" title="<?php the_title_attribute(); ?>" rel="external" target="_blank">
 						
 						<?php the_title(); ?>
 						
@@ -40,7 +40,7 @@
 			
 				<h2 class="entry-title">
 					
-					<a href="<?php echo $link; ?>" title="<?php the_title(); ?>" rel="external" target="_blank">
+					<a href="<?php echo $link; ?>" title="<?php the_title_attribute(); ?>" rel="external" target="_blank">
 					
 						<?php the_title(); ?>
 						

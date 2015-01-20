@@ -10,9 +10,11 @@
 
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 
-<?php $sidebar = apply_filters('intro_show_sidebar', get_option('intro_show_sidebar')); ?>
+<?php $sidebar = apply_filters('intro_show_sidebar', get_option('intro_show_sidebar', true)); ?>
 
 <?php get_header(); ?>
+
+<?php get_template_part('header', 'bar'); ?>
 
 <?php do_action('intro_before_main'); ?>	
 

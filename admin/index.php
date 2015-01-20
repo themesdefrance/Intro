@@ -7,9 +7,8 @@
  * @link 		https://github.com/y-lohse/Cocorico
  * @since 1.0
  */
-?>
 
-<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
+if ( ! defined( 'ABSPATH' ) ) exit; ?>
 
 <h2 style="font-size: 23px;font-weight: 400;padding: 9px 15px 4px 0px;line-height: 29px;">
 	<?php _e('Intro Settings', 'intro'); ?>
@@ -28,7 +27,7 @@ $form->groupHeader(array('general'=>__('General', 'intro'),
 $form->startWrapper('tab', 'general');
 
 	$form->startForm();
-
+		
 		$form->setting(array('type'=>'text',
 					 'name'=>substr(INTRO_LICENSE_KEY, strlen(INTRO_COCORICO_PREFIX)),
 					 'label'=>__("License", 'intro'),

@@ -30,7 +30,7 @@
 
 				<?php else: ?>
 
-					<a class="entry-permalink" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<a class="entry-permalink" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 
 						<?php intro_post_thumbnail(); ?>
 
@@ -56,7 +56,7 @@
 
 			<h2 class="entry-title" itemprop="headline">
 
-				<a class="entry-permalink" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark">
+				<a class="entry-permalink" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
 
 					<?php the_title(); ?>
 

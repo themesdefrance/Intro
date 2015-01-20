@@ -7,9 +7,6 @@
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  * @since 1.0
  */
-?>
-
-<?php
 	
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -32,16 +29,16 @@ if (!function_exists('intro_excerpt')){
 		
 		// Do we have an excerpt ? (excerpt field in the post editor)
 		if(has_excerpt())
-			return apply_filters('the_excerpt', wpautop(strip_shortcodes(strip_tags(get_the_excerpt(), '<img><iframe>'))));
+			return apply_filters('the_excerpt', wpautop(strip_shortcodes(strip_tags(get_the_excerpt()))));
 		
 		// Do we have a read more tag (<!--more-->) in the post content ?
 		if(strpos( $post->post_content, '<!--more-->' )){
 			$content_arr = get_extended($post->post_content);
-			return apply_filters('the_excerpt', wpautop(strip_shortcodes(strip_tags($content_arr['main'], '<img><iframe>'))));
+			return apply_filters('the_excerpt', wpautop(strip_shortcodes(strip_tags($content_arr['main']))));
 		}
 		
 		// Get the post content without shortcodes or HTML tags
-		$content = strip_shortcodes(strip_tags(get_the_content(), '<img><iframe>'));
+		$content = strip_shortcodes(strip_tags(get_the_content()));
 		
 		// Create a custom excerpt based on the post content
 		return apply_filters('the_excerpt', wpautop(wp_trim_words( $content , $length )));
@@ -365,6 +362,20 @@ if (!function_exists('intro_archives')){
 		return $result;
 	}
 }
+
+/**
+ * Show a popup in order to make people drop IE mouahaha
+ *
+ * @since 1.0
+ * @return void
+ */
+if(!function_exists('intro_chromeframe_notice')){
+	function intro_chromeframe_notice(){ ?>
+		<!--[if lt IE 8]><p class='chromeframe'><?php _e('Your browser is <em>too old !','toutatis'); ?></em> <a href="http://browsehappy.com/"><?php _e('Update your browser','toutatis'); ?></a> <?php _e('or','toutatis'); ?> <a href="http://www.google.com/chromeframe/?redirect=true"><?php _e('Install Google Chrome Frame','toutatis'); ?></a> <?php _e('to display this website correctly','toutatis'); ?>.</p><![endif]-->
+	<?php
+	}
+}
+add_action('intro_body_top','intro_chromeframe_notice');
 
 /**
  * Add content for the bbPress Addon in the theme options' Addons tab

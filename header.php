@@ -36,7 +36,8 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
-<!--[if lt IE 8]><p class=chromeframe><?php _e('Your browser is <em>too old !','intro'); ?></em> <a href="http://browsehappy.com/"><?php _e('Update your browser','intro'); ?></a> <?php _e('or','intro'); ?> <a href="http://www.google.com/chromeframe/?redirect=true"><?php _e('Install Google Chrome Frame','intro'); ?></a> <?php _e('to display this website correctly','intro'); ?>.</p><![endif]-->
+	
+	<?php do_action('intro_body_top'); ?>
 	
 	<div class="page-wrapper">
 			
@@ -49,13 +50,13 @@
 						<?php if(get_option('intro_logo')) : ?>
 						
 							<a href="<?php echo home_url(); ?>" class="logo-img">	
-								<img src="<?php echo esc_url(get_option('intro_logo')); ?>" alt="<?php echo bloginfo('name'); ?>">
+								<img src="<?php echo esc_url(get_option('intro_logo')); ?>" alt="<?php echo esc_attr(bloginfo('name')); ?>">
 							</a>
 						
 						<?php else: ?>
 						
-							<a href="<?php echo home_url(); ?>" title="<?php echo bloginfo('name'); ?>" class="logo-text">
-								<?php echo bloginfo('name'); ?>
+							<a href="<?php echo home_url(); ?>" title="<?php echo esc_attr(bloginfo('name')); ?>" class="logo-text">
+								<?php echo esc_attr(bloginfo('name')); ?>
 							</a>
 						
 						<?php endif; ?>
@@ -65,8 +66,6 @@
 					</div><!--END .intro-logo-->
 					
 					<nav class="main-menu" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						
-						
 						
 						<?php
 						wp_nav_menu(array(
@@ -81,7 +80,4 @@
 				
 				</div><!--END .wrapper-->
 				
-			</header><!--END .site-header-->
-			
-			<?php get_template_part('header', 'bar'); ?>
-			
+			</header><!--END .site-header-->			
