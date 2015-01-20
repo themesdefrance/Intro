@@ -1415,7 +1415,6 @@ img, table, td, blockquote, code, pre, textarea, input, video {
   left: 0;
   right: 0;
   top: 100%;
-  margin-top: 1px;
   display: none;
   min-width: 200px;
   border: 1px solid rgba(56, 69, 91, 0.1);
@@ -1694,7 +1693,6 @@ body.admin-bar .site-header {
 
 .entry-header-meta {
   color: #777777;
-  font-weight: bold;
   font-size: 14px; }
 
 .entry-header-meta a, .entry-footer-meta a {
