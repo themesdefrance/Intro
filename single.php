@@ -31,10 +31,10 @@
 				while (have_posts()) : the_post();
 				
 					get_template_part('content', get_post_format());
-				
-					comments_template();
 					
-					intro_posts_nav(false, '','<div class="pagination">','</div>');
+					intro_single_post_nav();
+					
+					comments_template();
 				
 				endwhile;
 			?>
