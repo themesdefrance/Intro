@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Intro\n"
-"POT-Creation-Date: 2015-01-06 09:22+0100\n"
-"PO-Revision-Date: 2015-01-06 09:22+0100\n"
+"POT-Creation-Date: 2015-01-21 18:31+0100\n"
+"PO-Revision-Date: 2015-01-21 18:31+0100\n"
 "Last-Translator: Alex Thèmes de France <alex@themesdefrance.fr>\n"
 "Language-Team: Thèmes de France <bonjour@themesdefrance.fr>\n"
 "Language: en_US\n"
@@ -16,148 +16,152 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../404.php:15
+#: ../404.php:39
 msgid "Oops, there is nothing here..."
 msgstr ""
 
-#: ../404.php:24
+#: ../404.php:54
 #, php-format
 msgid ""
 "The page you requested does not seem to exist. You can go back to <a href="
 "\"%s\">the home page</a> or browse the archives :"
 msgstr ""
 
-#: ../comments.php:22
+#: ../comments.php:25
+msgid "1 comment was added, add yours."
+msgstr ""
+
+#: ../comments.php:48
 msgid "Previous comments"
 msgstr ""
 
-#: ../comments.php:25
+#: ../comments.php:52
 msgid "Next comments"
 msgstr ""
 
-#: ../comments.php:33
+#: ../comments.php:62
 msgid "Be the first to post a comment."
 msgstr ""
 
-#: ../comments.php:41
+#: ../comments.php:78
 msgid "Comments are closed."
 msgstr ""
 
-#: ../content-body.php:15 ../content-body.php:32
+#: ../content-body.php:31 ../content-body.php:48
 msgid "Read more"
 msgstr ""
 
-#: ../content-footer.php:19
+#: ../content-footer.php:36
 msgid "Pages:"
 msgstr ""
 
-#: ../content-header.php:15
+#: ../content-header.php:27
 msgid "Published "
 msgstr ""
 
-#: ../content-header.php:19
+#: ../content-header.php:31
 msgid "on"
 msgstr ""
 
-#: ../content-header.php:29
+#: ../content-header.php:48
 msgid "by"
 msgstr ""
 
-#: ../content-header.php:41
+#: ../content-header.php:60
 msgid "in"
 msgstr ""
 
-#: ../content-header.php:51
+#: ../content-header.php:72
 msgid "No Comment"
 msgstr ""
 
-#: ../content-header.php:51
+#: ../content-header.php:73
 msgid "One Comment"
 msgstr ""
 
-#: ../content-header.php:51
+#: ../content-header.php:74
 msgid "% Comments"
 msgstr ""
 
-#: ../content-header.php:57
+#: ../content-header.php:79
 msgid "Edit"
 msgstr ""
 
-#: ../content-none.php:19
+#: ../content-none.php:41
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: ../content-none.php:23
+#: ../content-none.php:45
 msgid ""
 "Sorry but no post match what you are looking for. Try some new keywords "
 "below :"
 msgstr ""
 
-#: ../content-none.php:28
+#: ../content-none.php:50
 #, php-format
 msgid ""
 "Sorry but no post match what you are looking for. You should <a href=\"%1$s"
 "\">go back to the homepage</a> and start again."
 msgstr ""
 
-#: ../footer.php:27 ../admin/index.php:52
+#: ../footer.php:37 ../admin/index.php:63
 #, php-format
 msgid ""
 "<strong>%s</strong> - Intro by <a href=\"https://www.themesdefrance.fr/\" "
 "target=\"_blank\">Themes de France</a>"
 msgstr ""
 
-#: ../footer.php:50
+#: ../footer.php:58
 msgid "Back to the top"
 msgstr ""
 
-#: ../functions.php:43
+#: ../functions.php:53
 msgid "Main menu"
 msgstr ""
 
-#: ../functions.php:44
+#: ../functions.php:54
 msgid "Footer menu"
 msgstr ""
 
-#: ../functions.php:49 ../admin/index.php:44
+#: ../functions.php:59 ../admin/index.php:55
 msgid "Sidebar"
 msgstr ""
 
-#: ../functions.php:51
+#: ../functions.php:61
 msgid "Add widgets in the sidebar."
 msgstr ""
 
-#: ../functions.php:59 ../admin/index.php:49
+#: ../functions.php:69 ../admin/index.php:60
 msgid "Footer"
 msgstr ""
 
-#: ../functions.php:61
+#: ../functions.php:71
 msgid "Add widgets in the footer."
 msgstr ""
 
-#: ../functions.php:88
+#: ../functions.php:104
 msgid "Post width"
 msgstr ""
 
-#: ../functions.php:89
+#: ../functions.php:105
 msgid "Fullpage width"
 msgstr ""
 
-#: ../functions.php:139 ../admin/index.php:2
+#: ../functions.php:166 ../admin/index.php:14
 msgid "Intro Settings"
 msgstr ""
 
-#: ../functions.php:147
+#: ../functions.php:180
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: ../functions.php:332
+#: ../functions.php:387
 msgid "Themes de France"
 msgstr ""
 
-#: ../functions.php:355
+#: ../functions.php:412
 #, php-format
 msgid ""
 "To get Intro support and automatic updates, <a href='%s' "
@@ -165,79 +169,55 @@ msgid ""
 "href='%s'>I'm not interested</a>"
 msgstr ""
 
-#: ../header-bar.php:7 ../header-bar.php:62
+#: ../header-bar.php:23 ../header-bar.php:78
 msgid "Blog"
 msgstr ""
 
-#: ../header-bar.php:16
+#: ../header-bar.php:32
 msgid "Posts from "
 msgstr ""
 
-#: ../header-bar.php:22
+#: ../header-bar.php:38
 msgid "Posts tagged by "
 msgstr ""
 
-#: ../header-bar.php:28
+#: ../header-bar.php:44
 #, php-format
 msgid "Search results for : %s"
 msgstr ""
 
-#: ../header-bar.php:36
+#: ../header-bar.php:52
 #, php-format
 msgid "About %s"
 msgstr ""
 
-#: ../header-bar.php:42
+#: ../header-bar.php:58
 msgid "Archives from "
 msgstr ""
 
-#: ../header-bar.php:46 ../header-bar.php:50
+#: ../header-bar.php:62 ../header-bar.php:66
 msgid "Archives for "
 msgstr ""
 
-#: ../header-bar.php:54
+#: ../header-bar.php:70
 msgid "Archives"
 msgstr ""
 
-#: ../header.php:27
-msgid "Your browser is <em>too old !"
-msgstr ""
-
-#: ../header.php:27
-msgid "Update your browser"
-msgstr ""
-
-#: ../header.php:27
-msgid "or"
-msgstr ""
-
-#: ../header.php:27
-msgid "Install Google Chrome Frame"
-msgstr ""
-
-#: ../header.php:27
-msgid "to display this website correctly"
-msgstr ""
-
-#: ../searchform.php:3 ../searchform.php:4
+#: ../searchform.php:15
 msgid "Search for:"
 msgstr ""
 
-#: ../searchform.php:4
-msgid "Search ..."
-msgstr ""
-
-#: ../template-fullwidth.php:5
+#: ../template-fullwidth.php:15
 msgid "Fullwidth"
 msgstr ""
 
-#: ../admin/EDD_SL_Theme_Updater.php:56
+#: ../admin/EDD_SL_Theme_Updater.php:67
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr ""
 
-#: ../admin/EDD_SL_Theme_Updater.php:61
+#: ../admin/EDD_SL_Theme_Updater.php:72
 #, php-format
 msgid ""
 "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
@@ -245,102 +225,102 @@ msgid ""
 "a>."
 msgstr ""
 
-#: ../admin/index.php:9
+#: ../admin/index.php:23
 msgid "General"
 msgstr ""
 
-#: ../admin/index.php:10
+#: ../admin/index.php:24
 msgid "Addons"
 msgstr ""
 
-#: ../admin/index.php:22
+#: ../admin/index.php:33
 msgid "License"
 msgstr ""
 
-#: ../admin/index.php:23
+#: ../admin/index.php:34
 msgid ""
 "Purchase a licence key in order to receive Intro updates and get access to "
 "support. Then paste it in the field above."
 msgstr ""
 
-#: ../admin/index.php:23
+#: ../admin/index.php:34
 msgid "Get Intro updates & support"
 msgstr ""
 
-#: ../admin/index.php:31
+#: ../admin/index.php:42
 msgid "Main color"
 msgstr ""
 
-#: ../admin/index.php:32
+#: ../admin/index.php:43
 msgid "This color will be used across your website for buttons, links, etc."
 msgstr ""
 
-#: ../admin/index.php:36
+#: ../admin/index.php:47
 msgid "Logo"
 msgstr ""
 
-#: ../admin/index.php:37
+#: ../admin/index.php:48
 msgid ""
 "Upload a logo to display in the header (if you don't have a logo, the name "
 "of your website will be displayed instead)."
 msgstr ""
 
-#: ../admin/index.php:45
+#: ../admin/index.php:56
 msgid "Display a sidebar on the content's right across your website."
 msgstr ""
 
-#: ../admin/index.php:50
+#: ../admin/index.php:61
 msgid ""
 "Left footer content. The following HTML tags are allowed : &lt;a href=&quot;"
 "LINK&quot;&gt;TEXT_LINK&lt;/a&gt;, &lt;strong&gt;BOLD_TEXT&lt;/strong&gt;, "
 "&lt;em&gt;ITALIC_TEXT&lt;/em&gt;, &lt;img src=&quot;IMAGE_URL&quot;&gt;."
 msgstr ""
 
-#: ../admin/index.php:57
+#: ../admin/index.php:68
 msgid "Additionnal CSS"
 msgstr ""
 
-#: ../admin/index.php:58
+#: ../admin/index.php:69
 msgid ""
 "CSS rules added in this field will be added to your site. If you have too "
 "many updates, you should download and install the Intro child theme from"
 msgstr ""
 
-#: ../admin/index.php:58
+#: ../admin/index.php:69
 msgid "your Themes de France account"
 msgstr ""
 
-#: ../admin/index.php:71
+#: ../admin/index.php:82
 msgid ""
 "Do you know that Intro can be extended with addons ? Check the addons "
 "available below :"
 msgstr ""
 
-#: ../admin/index.php:85
+#: ../admin/index.php:97
 msgid "Save changes"
 msgstr ""
 
-#: ../admin/index.php:96
+#: ../admin/index.php:108
 msgid "Any questions on Intro ? Go to the"
 msgstr ""
 
-#: ../admin/index.php:96
+#: ../admin/index.php:108
 msgid "Themes de France support page."
 msgstr ""
 
-#: ../admin/index.php:100
+#: ../admin/index.php:112
 msgid "In order to get support, you need to purchase"
 msgstr ""
 
-#: ../admin/index.php:100
+#: ../admin/index.php:112
 msgid "the full version."
 msgstr ""
 
-#: ../admin/index.php:104
+#: ../admin/index.php:116
 msgid "If you like Intro, you should"
 msgstr ""
 
-#: ../admin/index.php:104
+#: ../admin/index.php:116
 msgid "follow us on Facebook"
 msgstr ""
 
@@ -356,208 +336,240 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:43
+#: ../admin/functions/intro-functions.php:71
 msgid "Set up the main menu"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:154
+#: ../admin/functions/intro-functions.php:212
+msgid "Published In"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:214
+msgid "Previous Post"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:215
+msgid "Next Post"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:244
 msgid "Pingback:"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:165
+#: ../admin/functions/intro-functions.php:255
 msgid "Your comment is waiting for moderation."
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:175
+#: ../admin/functions/intro-functions.php:265
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:175
+#: ../admin/functions/intro-functions.php:265
 #, php-format
 msgid "<cite class=\"fn\">%s</cite>"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:178
+#: ../admin/functions/intro-functions.php:268
 #, php-format
 msgid "Published on %s at %s"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:193
+#: ../admin/functions/intro-functions.php:283
 msgid "Reply"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:216
+#: ../admin/functions/intro-functions.php:312
 #, php-format
 msgid "Reply to %s"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:217
+#: ../admin/functions/intro-functions.php:313
 msgid "Post comment"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:221
-#: ../admin/functions/intro-functions.php:224
+#: ../admin/functions/intro-functions.php:317
+#: ../admin/functions/intro-functions.php:320
 msgid "Name"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:224
-#: ../admin/functions/intro-functions.php:231
+#: ../admin/functions/intro-functions.php:320
+#: ../admin/functions/intro-functions.php:327
 msgid "required"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:228
-#: ../admin/functions/intro-functions.php:231
+#: ../admin/functions/intro-functions.php:324
+#: ../admin/functions/intro-functions.php:327
 msgid "Email"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:234
-#: ../admin/functions/intro-functions.php:237
+#: ../admin/functions/intro-functions.php:330
+#: ../admin/functions/intro-functions.php:333
 msgid "Website"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:240
+#: ../admin/functions/intro-functions.php:336
 msgid "Comment"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:300
+#: ../admin/functions/intro-functions.php:365
 msgid "There is no archives to display."
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:350
+#: ../admin/functions/intro-functions.php:413
+msgid "Your browser is <em>too old !"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:413
+msgid "Update your browser"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:413
+msgid "or"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:413
+msgid "Install Google Chrome Frame"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:413
+msgid "to display this website correctly"
+msgstr ""
+
+#: ../admin/functions/intro-functions.php:434
 msgid "Intro bbPress Addon"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:358
+#: ../admin/functions/intro-functions.php:443
 msgid ""
 "Intro bbPress Addon bring custom CSS styling to Intro to get a perfect "
 "bbPress integration."
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:362
+#: ../admin/functions/intro-functions.php:447
 msgid "Get Intro bbPress Addon"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:368
+#: ../admin/functions/intro-functions.php:454
 msgid "Intro bbPress Addon is installed. Thanks for using it !"
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:370
+#: ../admin/functions/intro-functions.php:456
 msgid "If you have some time, help us to improve it by giving some feedback."
 msgstr ""
 
-#: ../admin/functions/intro-functions.php:374
+#: ../admin/functions/intro-functions.php:460
 msgid "Give feedback on Intro bbPress Addon"
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:8
+#: ../admin/metaboxes/post-formats.php:23
 msgid "Link"
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:17
+#: ../admin/metaboxes/post-formats.php:32
 msgid "Quote"
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:26
+#: ../admin/metaboxes/post-formats.php:41
 msgid "Video"
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:47
+#: ../admin/metaboxes/post-formats.php:67
 msgid "Link to feature"
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:48
+#: ../admin/metaboxes/post-formats.php:68
 msgid ""
 "Add a link to feature for this post. You're free to talk about it in the "
 "post content."
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:65
+#: ../admin/metaboxes/post-formats.php:92
 msgid "Quote to feature"
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:66
+#: ../admin/metaboxes/post-formats.php:93
 msgid "Add some wise words and talk about it in the post content."
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:72
+#: ../admin/metaboxes/post-formats.php:99
 msgid "Quote author (optional)"
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:73
+#: ../admin/metaboxes/post-formats.php:100
 msgid "Be nice and don't forget to credit the quote author."
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:91
+#: ../admin/metaboxes/post-formats.php:125
 msgid "Video to feature"
 msgstr ""
 
-#: ../admin/metaboxes/post-formats.php:92
+#: ../admin/metaboxes/post-formats.php:126
 msgid "Add a video link from Youtube, Dailymotion or Vimeo."
 msgstr ""
 
-#: ../admin/widgets/calltoaction.php:10
+#: ../admin/widgets/calltoaction.php:35
 msgid "Intro - Call to action"
 msgstr ""
 
-#: ../admin/widgets/calltoaction.php:11
+#: ../admin/widgets/calltoaction.php:36
 msgid "Add a call to action in the sidebar."
 msgstr ""
 
-#: ../admin/widgets/calltoaction.php:32
+#: ../admin/widgets/calltoaction.php:67
 msgid "Click here"
 msgstr ""
 
-#: ../admin/widgets/calltoaction.php:61 ../admin/widgets/video.php:67
+#: ../admin/widgets/calltoaction.php:104 ../admin/widgets/video.php:118
 msgid "Title:"
 msgstr ""
 
-#: ../admin/widgets/calltoaction.php:65
+#: ../admin/widgets/calltoaction.php:108
 msgid "Call to action incentive:"
 msgstr ""
 
-#: ../admin/widgets/calltoaction.php:69
+#: ../admin/widgets/calltoaction.php:112
 msgid "Call to action destination (url):"
 msgstr ""
 
-#: ../admin/widgets/calltoaction.php:73
+#: ../admin/widgets/calltoaction.php:116
 msgid "Button's label:"
 msgstr ""
 
-#: ../admin/widgets/social.php:23
+#: ../admin/widgets/social.php:63
 msgid "Intro - Social"
 msgstr ""
 
-#: ../admin/widgets/social.php:24
+#: ../admin/widgets/social.php:64
 msgid "Display links to your social profiles."
 msgstr ""
 
-#: ../admin/widgets/social.php:65 ../admin/widgets/video.php:44
+#: ../admin/widgets/social.php:123 ../admin/widgets/video.php:95
 msgid "Please enter a valid url"
 msgstr ""
 
-#: ../admin/widgets/social.php:81
+#: ../admin/widgets/social.php:139
 msgid "More networks"
 msgstr ""
 
-#: ../admin/widgets/video.php:11
+#: ../admin/widgets/video.php:44
 msgid "Intro - Video"
 msgstr ""
 
-#: ../admin/widgets/video.php:12
+#: ../admin/widgets/video.php:45
 msgid "Add a video from Youtube, Dailymotion or Vimeo."
 msgstr ""
 
-#: ../admin/widgets/video.php:32
+#: ../admin/widgets/video.php:75
 msgid ""
 "To display a video, please add a Youtube, Dailymotion or Vimeo URL in the "
 "widget settings."
 msgstr ""
 
-#: ../admin/widgets/video.php:50
+#: ../admin/widgets/video.php:101
 msgid "This video url doesn't seem to exist."
 msgstr ""
 
-#: ../admin/widgets/video.php:71
+#: ../admin/widgets/video.php:122
 msgid "Video URL (Youtube, Dailymotion or Vimeo):"
 msgstr ""

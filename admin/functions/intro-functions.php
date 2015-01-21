@@ -209,10 +209,10 @@ if (!function_exists('intro_single_post_nav')){
 		<nav class="entry-navigation" role="navigation">
 			<?php
 			if ( is_attachment() ) :
-				previous_post_link( '<span class="meta-nav-prev">%link</span>', __( 'Published In', 'toutatis' ) . '%title' );
+				previous_post_link( '<span class="meta-nav-prev">%link</span>', __( 'Published In', 'intro' ) . '%title' );
 			else :
-				previous_post_link( '<span class="meta-nav-prev">%link</span>', __( 'Previous Post', 'toutatis' ));
-				next_post_link( '<span class="meta-nav-next">%link</span>', __( 'Next Post', 'toutatis' ));
+				previous_post_link( '<span class="meta-nav-prev">%link</span>', __( 'Previous Post', 'intro' ));
+				next_post_link( '<span class="meta-nav-next">%link</span>', __( 'Next Post', 'intro' ));
 			endif;
 			?>
 		</nav><!-- .entry-navigation -->
