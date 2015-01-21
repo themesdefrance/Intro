@@ -1691,13 +1691,15 @@ body.admin-bar .site-header {
     .entry-link a:after {
       content: '\e09c'; }
 
-.entry-header-meta {
+.entry-meta {
   color: #777777;
   font-size: 14px; }
+  .entry-meta .updated {
+    display: none; }
 
-.entry-header-meta a, .entry-footer-meta a {
+.entry-meta a, .entry-footer-meta a {
   text-decoration: none; }
-  .entry-header-meta a:hover, .entry-footer-meta a:hover {
+  .entry-meta a:hover, .entry-footer-meta a:hover {
     text-decoration: underline; }
 
 .entry-content {

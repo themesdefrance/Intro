@@ -19,7 +19,7 @@
 
 <?php if(!is_page()): ?>
 
-	<span class="entry-header-meta" >
+	<div class="entry-meta" >
 
 	<?php
 
@@ -33,7 +33,15 @@
 			<time class="date published" itemprop="datePublished" datetime="<?php the_time('c'); ?>">
 				<?php the_time( get_option( 'date_format' ) ); ?>
 			</time>
-
+			
+			<?php if (get_the_modified_time() != get_the_time()) { ?>
+			
+				<time class="date updated" itemprop="dateModified" datetime="<?php the_modified_time('c'); ?>" >
+					<?php the_modified_time(get_option( 'date_format' )); ?>
+				</time>
+				
+			<?php }
+			
 		<?php
 		}
 		if($post_header_author){ ?>
@@ -69,6 +77,6 @@
 		edit_post_link(__('Edit', 'intro'), ' | ');
 	?>
 
-	</span><!--END .entry-header-meta-->
+	</div><!--END .entry-meta-->
 
 <?php endif; ?>
