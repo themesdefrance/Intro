@@ -67,7 +67,7 @@
 
 			if(comments_open()){ ?>
 				
-				<a href="<?php esc_url(the_permalink()); ?>#comments" itemprop="discussionUrl">
+				<a href="<?php the_permalink(); ?>#comments" itemprop="discussionUrl">
 					
 					<?php comments_number(	__('No Comment', 'intro') . '<meta itemprop="interactionCount" content="0 UserComments">',
 											__('One Comment', 'intro') . '<meta itemprop="interactionCount" content="1 UserComments">',
