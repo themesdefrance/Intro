@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Intro\n"
-"POT-Creation-Date: 2015-01-21 18:28+0100\n"
-"PO-Revision-Date: 2015-01-21 18:31+0100\n"
+"POT-Creation-Date: 2015-01-28 18:51+0100\n"
+"PO-Revision-Date: 2015-01-28 18:55+0100\n"
 "Last-Translator: Alex Thèmes de France <alex@themesdefrance.fr>\n"
 "Language-Team: Thèmes de France <bonjour@themesdefrance.fr>\n"
 "Language: fr_FR\n"
@@ -10,7 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
-"X-Poedit-KeywordsList: __;_e;_x;_n\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x;_ex;_nx;esc_attr_e;esc_attr__;"
+"esc_attr_x;esc_html__;esc_html_e;esc_html_x\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -30,8 +31,11 @@ msgstr ""
 "href=\"%s\">la page d'accueil</a> ou parcourir les archives :"
 
 #: ../comments.php:25
+#, php-format
 msgid "1 comment was added, add yours."
-msgstr "Un commentaire a été rédigé, ajoutez le votre."
+msgid_plural "%s comments were added, add yours."
+msgstr[0] "Un commentaire a été rédigé, ajoutez le votre."
+msgstr[1] "%s commentaires ont été rédigés, ajoutez le votre."
 
 #: ../comments.php:48
 msgid "Previous comments"
@@ -49,7 +53,7 @@ msgstr "Soyez le premier à publier un commentaire."
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
-#: ../content-body.php:31 ../content-body.php:48
+#: ../content-body.php:36 ../content-body.php:53
 msgid "Read more"
 msgstr "Lire la suite"
 
@@ -126,51 +130,51 @@ msgstr ""
 msgid "Back to the top"
 msgstr "Remonter"
 
-#: ../functions.php:53
+#: ../functions.php:72
 msgid "Main menu"
 msgstr "Menu principal"
 
-#: ../functions.php:54
+#: ../functions.php:73
 msgid "Footer menu"
 msgstr "Menu du pied de page"
 
-#: ../functions.php:59 ../admin/index.php:55
+#: ../functions.php:78 ../admin/index.php:55
 msgid "Sidebar"
 msgstr "Barre latérale"
 
-#: ../functions.php:61
+#: ../functions.php:80
 msgid "Add widgets in the sidebar."
 msgstr "Ajouter des widgets à la barre latérale."
 
-#: ../functions.php:69 ../admin/index.php:60
+#: ../functions.php:88 ../admin/index.php:60
 msgid "Footer"
 msgstr "Pied de page"
 
-#: ../functions.php:71
+#: ../functions.php:90
 msgid "Add widgets in the footer."
 msgstr "Ajouter des widgets au pied de page."
 
-#: ../functions.php:104
+#: ../functions.php:129
 msgid "Post width"
 msgstr "Largeur de l'article"
 
-#: ../functions.php:105
+#: ../functions.php:130
 msgid "Fullpage width"
 msgstr "Largeur pleine page"
 
-#: ../functions.php:166 ../admin/index.php:14
+#: ../functions.php:191 ../admin/index.php:14
 msgid "Intro Settings"
 msgstr "Options Intro"
 
-#: ../functions.php:180
+#: ../functions.php:205
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Vous n’avez pas les droits suffisants pour accéder à cette page."
 
-#: ../functions.php:387
+#: ../functions.php:406
 msgid "Themes de France"
 msgstr "Thèmes de France"
 
-#: ../functions.php:412
+#: ../functions.php:431
 #, php-format
 msgid ""
 "To get Intro support and automatic updates, <a href='%s' "
@@ -215,9 +219,13 @@ msgstr "Archives pour "
 msgid "Archives"
 msgstr "Archives"
 
-#: ../searchform.php:15
+#: ../searchform.php:15 ../searchform.php:17
 msgid "Search for:"
 msgstr "Rechercher:"
+
+#: ../searchform.php:17
+msgid "Search ..."
+msgstr "Rechercher ..."
 
 #: ../template-fullwidth.php:15
 msgid "Fullwidth"
@@ -592,6 +600,10 @@ msgstr "Veuillez entrer une url valide"
 msgid "More networks"
 msgstr "Plus de réseaux"
 
+#: ../admin/widgets/social.php:148
+msgid "Title"
+msgstr "Titre"
+
 #: ../admin/widgets/video.php:44
 msgid "Intro - Video"
 msgstr "Intro - Video"
@@ -615,9 +627,6 @@ msgstr "L'url de cette vidéo semble être erronée."
 #: ../admin/widgets/video.php:122
 msgid "Video URL (Youtube, Dailymotion or Vimeo):"
 msgstr "URL de la vidéo"
-
-#~ msgid "Search ..."
-#~ msgstr "Rechercher ..."
 
 #~ msgid ""
 #~ "In order to get updates, please enter your licence that you received by "
