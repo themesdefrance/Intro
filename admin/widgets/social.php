@@ -144,9 +144,10 @@ class IntroSocial extends WP_Widget{
 			
 			<?php $value = (isset($instance[$field])) ? $instance[$field] : ''; ?>
 			<p>
-				<label for="<?php echo $field[$this->get_field_id($field)]; ?>">
-					<?php echo ucfirst(str_replace("-"," ",$field)).':'; ?>
+				<label for="<?php echo $this->get_field_id($field); ?>">
+					<?php echo ($field == 'title' ? __('Title','intro') : ucfirst(str_replace("-"," ",$field)) ) . ':'; ?>
 				</label> 
+				
 				<input class="widefat" id="<?php echo $this->get_field_id($field); ?>" name="<?php echo $this->get_field_name($field); ?>" type="url" value="<?php echo esc_attr($value); ?>" />
 			</p>
 			<?php

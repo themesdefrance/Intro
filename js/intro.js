@@ -3,13 +3,6 @@ $(function(){
 
 	 $(document).ready(function(){
 
-		//menu toggle on mobile view
-		$('.menu-toggle').click(function(){
-			$('.content-wrapper').toggleClass('menu-open');
-		});
-
-		$('.post-video, .widget-video').fitVids();
-
 		//back to top button
 		var $toTop = $('#back-to-top');
 		if ($(window).scrollTop() <= $(window).height()) $toTop.hide();
@@ -25,7 +18,7 @@ $(function(){
 			else $toTop.fadeOut();
 		});
 		
-		$('.entry-video, .widget-video').fitVids();
+		$('.entry-video, .widget-video, .entry-content').fitVids();
 		
 		$("#toggle-menu-icon").click(function() {
 		  $(".top-level-menu").slideToggle(400);
@@ -41,7 +34,11 @@ $(function(){
 		
 		var recalculateMenuSize = function(){
 			var browserWidth = $( window ).width();
-
+			
+			if ( browserWidth == $( window ).width() ) {
+		        return;
+		    }
+			
 			if ( browserWidth > 800 ) {
 				$(".top-level-menu").show();
 			}else{

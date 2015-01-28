@@ -14,10 +14,14 @@ select{
 
 input[type='text'],input[type='email'], input[type='url'], select{
 	max-width:300px;
+	line-height:32px;
+	height:40px;
 }
 
 input[type='tel'], input[type='number'], input[type='date']{
 	max-width:170px;
+	line-height:32px;
+	height:40px;
 }
 
 input[type='text'],input[type='email'], input[type='url'], input[type='tel'], input[type='number'], input[type='date'], textarea, select{

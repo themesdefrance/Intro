@@ -38,7 +38,6 @@ $menu-width: 280px;
 	z-index: $z-menu;
 	width: 100%;
 	font-weight: bold;
-	border-bottom: 1px solid rgba(56,69,91,0.1);
 	
 	@extend %custom-bg;
 	@extend .clearfix;
@@ -51,7 +50,7 @@ $menu-width: 280px;
 		width: 30%;
 		float: left;
 		text-align: left;
-		padding: 30px 0;
+		padding: 20px 0;
 		
 		@include width-below($grid-collapse-below){
 			width:100%;
@@ -155,7 +154,7 @@ $menu-width: 280px;
 		a{
 			display: inline-block;
 			color: $heading-font-color;
-			padding:40px 0px 37px;
+			padding:30px 0px 27px;
 			text-decoration: none;
 			font-size: 16px;
 			
@@ -176,7 +175,6 @@ $menu-width: 280px;
 	display: none;
 	min-width: 200px;
 	border:1px solid rgba(56, 69, 91, 0.1);
-	border-top:none;
 	
 	@include width-below($grid-collapse-below){
 		display: block;
@@ -216,7 +214,7 @@ $menu-width: 280px;
 .header-bar {
 	
 	.header-bar-title {
-		padding: 50px 0;
+		padding: 40px 0;
 		font-size: 28px;
 		font-weight: bold;
 		color: $heading-font-color;
@@ -224,7 +222,7 @@ $menu-width: 280px;
 	}
 	
 	#site-breadcrumbs {
-		margin: 10px 0;
+		margin: -30px 0 50px;
 		font-size: 14px;
 		
 		a{
@@ -290,7 +288,11 @@ body.admin-bar .site-header{
 
 .footer-wrapper {
 	padding-top: 60px;
-	background:#1c1c1c;
+	
+	@include width-below($grid-collapse-below){
+		padding-top:0px;
+	}
+	
 }
 
 .footer-bar{
@@ -321,8 +323,6 @@ body.admin-bar .site-header{
 .site-footer{
 	margin: 40px auto 0;
 	padding: 20px 0;
-	background:#000;
-	color:#858585;
 }
 .site-footer a{
 	color:$footer-font-color;
@@ -358,7 +358,7 @@ body.admin-bar .site-header{
 .back-to-top{
 	border: none;
 	position: fixed;
-	right: 50px;
+	right: 0;
 	bottom: 0;
 	padding: 10px;
 	

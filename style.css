@@ -1071,10 +1071,10 @@ table {
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: 'Open Sans'; }
+  font-family: 'Open Sans', 'sans-serif'; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   font-weight: normal; }
 
 ul, ol {
@@ -1124,10 +1124,14 @@ button, input, select {
   font-size: 100%; }
 
 input[type='text'], input[type='email'], input[type='url'], select {
-  max-width: 300px; }
+  max-width: 300px;
+  line-height: 32px;
+  height: 40px; }
 
 input[type='tel'], input[type='number'], input[type='date'] {
-  max-width: 170px; }
+  max-width: 170px;
+  line-height: 32px;
+  height: 40px; }
 
 input[type='text'], input[type='email'], input[type='url'], input[type='tel'], input[type='number'], input[type='date'], textarea, select {
   display: inline-block;
@@ -1283,7 +1287,7 @@ img, table, td, blockquote, code, pre, textarea, input, video {
   color: #fff;
   font-size: 16px;
   padding: 6px 16px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   transition: background 0.2s ease-out; }
   .button:hover, .comment-form input[type="submit"]:hover, input[type='submit']:hover, input[type='button']:hover, .widget_calendar #next a:hover, .widget_calendar #prev a:hover, .widget_introcalltoaction a.button:hover {
     text-decoration: none; }
@@ -1321,13 +1325,12 @@ img, table, td, blockquote, code, pre, textarea, input, video {
 .site-header {
   z-index: 500;
   width: 100%;
-  font-weight: bold;
-  border-bottom: 1px solid rgba(56, 69, 91, 0.1); }
+  font-weight: bold; }
   .site-header .intro-logo {
     width: 30%;
     float: left;
     text-align: left;
-    padding: 30px 0; }
+    padding: 20px 0; }
     @media only screen and (max-width: 800px) {
       .site-header .intro-logo {
         width: 100%;
@@ -1360,7 +1363,7 @@ img, table, td, blockquote, code, pre, textarea, input, video {
   .site-header .main-menu {
     width: 70%;
     float: left;
-    font-family: 'Open Sans'; }
+    font-family: 'Open Sans', 'sans-serif'; }
     @media only screen and (max-width: 800px) {
       .site-header .main-menu {
         text-align: left;
@@ -1401,7 +1404,7 @@ img, table, td, blockquote, code, pre, textarea, input, video {
     .site-header .main-menu a {
       display: inline-block;
       color: #38455b;
-      padding: 40px 0px 37px;
+      padding: 30px 0px 27px;
       text-decoration: none;
       font-size: 16px; }
       @media only screen and (max-width: 800px) {
@@ -1417,8 +1420,7 @@ img, table, td, blockquote, code, pre, textarea, input, video {
   top: 100%;
   display: none;
   min-width: 200px;
-  border: 1px solid rgba(56, 69, 91, 0.1);
-  border-top: none; }
+  border: 1px solid rgba(56, 69, 91, 0.1); }
   @media only screen and (max-width: 800px) {
     .site-header .sub-menu {
       display: block;
@@ -1444,13 +1446,13 @@ img, table, td, blockquote, code, pre, textarea, input, video {
       opacity: 1; } }
 
 .header-bar .header-bar-title {
-  padding: 50px 0;
+  padding: 40px 0;
   font-size: 28px;
   font-weight: bold;
   color: #38455b;
   text-transform: uppercase; }
 .header-bar #site-breadcrumbs {
-  margin: 10px 0;
+  margin: -30px 0 50px;
   font-size: 14px; }
   .header-bar #site-breadcrumbs a {
     text-decoration: none; }
@@ -1499,12 +1501,14 @@ body.admin-bar .site-header {
   padding-top: 0; }
 
 .footer-wrapper {
-  padding-top: 60px;
-  background: #1c1c1c; }
+  padding-top: 60px; }
+  @media only screen and (max-width: 800px) {
+    .footer-wrapper {
+      padding-top: 0px; } }
 
 .footer-bar {
   margin-top: 20px;
-  color: #f7f7f7; }
+  color: #38455b; }
   .footer-bar .widget {
     border-bottom: none; }
 
@@ -1520,14 +1524,12 @@ body.admin-bar .site-header {
 
 .site-footer {
   margin: 40px auto 0;
-  padding: 20px 0;
-  background: #000;
-  color: #858585; }
+  padding: 20px 0; }
 
 .site-footer a {
-  color: #f7f7f7;
+  color: #38455b;
   text-decoration: none;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   font-weight: bold; }
   .site-footer a:hover {
     text-decoration: underline; }
@@ -1553,7 +1555,7 @@ body.admin-bar .site-header {
 .back-to-top {
   border: none;
   position: fixed;
-  right: 50px;
+  right: 0;
   bottom: 0;
   padding: 10px; }
   .back-to-top:before {
@@ -1760,7 +1762,7 @@ body.admin-bar .site-header {
     line-height: 1.1;
     margin-bottom: 10px; }
   .entry-content blockquote {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'sans-serif';
     font-size: 24px;
     margin: 30px 0 30px 30px;
     line-height: 1.4; }
@@ -1771,7 +1773,7 @@ body.admin-bar .site-header {
       padding-right: 10px; }
     .entry-content blockquote cite {
       display: block;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', 'sans-serif';
       font-size: 16px;
       margin-top: 20px;
       font-style: normal;
@@ -1809,9 +1811,6 @@ body.admin-bar .site-header {
     float: left; }
   .entry-navigation .meta-nav-next {
     float: right; }
-
-.entry-comments {
-  padding: 0 0 50px; }
 
 .comments-title {
   padding: 0 0 40px;
@@ -1903,7 +1902,7 @@ body.admin-bar .site-header {
   color: #777777;
   margin-bottom: 10px; }
   .comment-header .comment-author {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'sans-serif';
     font-size: 20px; }
     .comment-header .comment-author a {
       font-style: normal;
@@ -1974,7 +1973,8 @@ body.admin-bar .site-header {
   .widget_search .search-field {
     width: 100%;
     padding: 4px 40px 4px 10px;
-    line-height: 32px; }
+    line-height: 32px;
+    height: 40px; }
   .widget_search .reset-btn {
     right: 42px;
     top: 6px; }
@@ -2009,7 +2009,7 @@ body.admin-bar .site-header {
     text-decoration: none; }
 
 .widget_calendar caption {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   font-size: 16px;
   margin-bottom: 5px;
   padding: 10px 0;
@@ -2063,7 +2063,7 @@ body.admin-bar .site-header {
         text-decoration: none; }
 
 .footer-bar .widget > h3 {
-  color: #f7f7f7; }
+  color: #38455b; }
 
 .pagination {
   display: inline-block;
@@ -2073,7 +2073,7 @@ body.admin-bar .site-header {
     color: inherit;
     text-decoration: none;
     padding: 4px 10px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'sans-serif';
     font-size: 18px;
     font-weight: bold;
     width: 30px;
@@ -2084,7 +2084,7 @@ body.admin-bar .site-header {
 
 .post-pagination {
   margin: 15px 0;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   display: inline-block;
   padding: 4px 10px; }
   .post-pagination a {

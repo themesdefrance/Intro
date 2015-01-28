@@ -49,7 +49,7 @@
 
 			<span class="vcard author">
 				<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
-					<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>" itemprop="url" rel="author"><?php the_author_meta('display_name'); ?></a>
+					<a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" itemprop="url" rel="author"><?php the_author_meta('display_name'); ?></a>
 				</span>
 			</span><!-- END .vcard.author -->
 
@@ -67,7 +67,7 @@
 
 			if(comments_open()){ ?>
 				
-				<a href="<?php the_permalink(); ?>#comments" itemprop="discussionUrl">
+				<a href="<?php esc_url(the_permalink()); ?>#comments" itemprop="discussionUrl">
 					
 					<?php comments_number(	__('No Comment', 'intro') . '<meta itemprop="interactionCount" content="0 UserComments">',
 											__('One Comment', 'intro') . '<meta itemprop="interactionCount" content="1 UserComments">',

@@ -471,4 +471,4 @@ if(!function_exists('intro_addons_bbpress')){
 	
 	}
 }
-add_action('intro_addons_tab', 'intro_addons_bbpress', 10, 1);
+//add_action('intro_addons_tab', 'intro_addons_bbpress', 10, 1);

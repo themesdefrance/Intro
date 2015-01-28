@@ -16,6 +16,11 @@ define('INTRO_THEME_NAME', 'Intro');
 define('INTRO_THEME_VERSION', '1.0.0');
 define('INTRO_LICENSE_KEY', 'intro_license_edd');
 
+//Set the content width (in pixels) based on the theme's design and stylesheet.
+if ( ! isset( $content_width ) ) {
+	$content_width = 720; 
+}
+
 // Include theme updater (relative to licensing)
 if(!class_exists('EDD_SL_Theme_Updater'))
 	include(dirname( __FILE__ ).'/admin/EDD_SL_Theme_Updater.php');
@@ -35,6 +40,20 @@ require 'admin/functions/intro-functions.php';
 
 //Refresh the permalink structure
 add_action('after_switch_theme', 'flush_rewrite_rules');
+
+//Remove accents in uploaded files
+add_filter( 'sanitize_file_name', 'remove_accents' );
+
+//Remove extra stuff from header
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wp_generator');
+remove_action('wp_head', 'feed_links', 2);
+remove_action('wp_head', 'index_rel_link');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'feed_links_extra', 3);
+remove_action('wp_head', 'start_post_rel_link', 10, 0);
+remove_action('wp_head', 'parent_post_rel_link', 10, 0);
+remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -80,9 +99,15 @@ if (!function_exists('intro_setup')){
 
 		// Enable custom title tag for 4.1
 		add_theme_support( 'title-tag' );
+		
+		// Enable Feed Links
+		add_theme_support( 'automatic-feed-links' );
+		
+		// Enable HTML5 markup
+		add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
 		// Set images sizes
-		add_image_size('intro-post-thumbnail', 720, 445, true);
+		set_post_thumbnail_size('intro-post-thumbnail', 720, 445, true);
 		add_image_size('intro-post-thumbnail-full', 1140, 605, true);
 
 		// Add Meta boxes for post formats
@@ -241,7 +266,6 @@ if(!function_exists('intro_user_styles')){
 			.site-header .main-menu li:hover > a,
 			.site-header .main-menu li.current-menu-item a,
 			.site-header a.logo-text:hover,
-			#toggle-menu-icon:hover,
 			#site-breadcrumbs a,
 			.entry-meta a,
 			.entry-content a,
@@ -249,8 +273,8 @@ if(!function_exists('intro_user_styles')){
 			.footer a,
 			.footer-wrapper .footer-bar a:hover,
 			.widget_introsocial ul li a,
-			.post-header-title a:hover,
-			.post-header-meta a,
+			.entry-title a:hover,
+			.entry-meta a,
 			.entry-content a,
 			.entry-footer-meta a,
 			#respond a,
@@ -265,10 +289,10 @@ if(!function_exists('intro_user_styles')){
 			
 			.content a:hover,
 			.footer a:hover,
-			.post-meta a:hover,
+			.entry-meta a:hover,
 			.entry-content a:hover,
 			.entry-navigation a:hover,
-			.post-footer-meta a:hover,
+			.entry-footer-meta a:hover,
 			.comment-author a:hover,
 			.comment-reply-link:hover,
 			.widget a:hover,
@@ -284,8 +308,7 @@ if(!function_exists('intro_user_styles')){
 			.entry-quote a:hover,
 			.entry-link,
 			.entry-link a:hover,
-			.pagination a:hover,
-			.footer-bar .widget_introsocial ul li a{
+			.pagination a:hover{
 				color:<?php echo $contrast; ?>;
 			}
 			
@@ -336,11 +359,6 @@ if(!function_exists('intro_user_styles')){
 			select:focus{
 				border-color:<?php echo $color; ?>;
 				box-shadow: 0 0 5px <?php echo $color; ?>;
-			}
-			
-			.site-header .main-menu ul > li.current-menu-item a,
-			.site-header .main-menu ul > li:hover > a{
-				border-bottom-color:<?php echo $color; ?>;	
 			}
 
 			</style>
