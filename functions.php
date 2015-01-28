@@ -277,6 +277,7 @@ if(!function_exists('intro_user_styles')){
 			.entry-meta a,
 			.entry-content a,
 			.entry-footer-meta a,
+			.comment-navigation a,
 			#respond a,
 			.comment-author a,
 			.comment-reply-link,

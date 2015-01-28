@@ -1935,6 +1935,11 @@ body.admin-bar .site-header {
   #respond a:hover {
     text-decoration: underline; }
 
+.comment-navigation a {
+  text-decoration: none; }
+  .comment-navigation a:hover {
+    text-decoration: underline; }
+
 .widget {
   margin-bottom: 20px;
   padding-bottom: 20px;

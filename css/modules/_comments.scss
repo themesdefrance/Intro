@@ -165,3 +165,12 @@
 		text-decoration:underline;
 	}
 }
+
+.comment-navigation a{
+	@extend %custom-color;
+	text-decoration:none;
+	
+	&:hover{
+		text-decoration: underline;
+	}
+}
