@@ -176,6 +176,10 @@ if (!function_exists('intro_enqueue')){
 		wp_enqueue_script('fitvids');
 
 		wp_enqueue_script('intro');
+		
+		if ( is_singular() ){
+			wp_enqueue_script( "comment-reply" );
+		}
 	}
 }
 add_action('wp_enqueue_scripts', 'intro_enqueue');
