@@ -37,8 +37,13 @@ if (!defined('COCORICO_PATH')){
 //load local extensions
 $localCocoPath = dirname(__FILE__);
 
-foreach (glob($localCocoPath.'/extensions/*', GLOB_ONLYDIR) as $extension){
-	foreach (glob($extension.'/*.php') as $file){
+$cocoExtensions = glob($localCocoPath.'/extensions/*', GLOB_ONLYDIR);
+if (!is_array($cocoExtensions)) $cocoExtensions;
+foreach ($cocoExtensions as $extension){
+	
+	$extensionFiles = glob($extension.'/*.php');
+	if (!$extensionFiles) $extensionFiles = array();
+	foreach ($extensionFiles as $file){
 		require_once $file;
 	}
 }
