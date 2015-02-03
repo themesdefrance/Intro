@@ -432,7 +432,7 @@ if(!function_exists('intro_admin_notice')){
 				if ( ! get_user_meta($user_id, 'ignore_purchaseintro_notice') ) {
 					echo '<div class="error"><p>';
 					
-						printf(__("To get Intro support and automatic updates, <a href='%s' target='__blank'>purchase a licence key on Themes de France</a> | <a href='%s'>I'm not interested</a>", 'intro'), 'https://www.themesdefrance.fr/themes/intro/#acheter?utm_source=theme&utm_medium=noticelink&utm_campaign=intro', '?ignore_notice=purchaseintro');
+						printf(__("To get Intro support and automatic updates, enter the licence key your received after your purchase. | <a href='%s'>It's ok, I don't want to update my theme</a>", 'intro'), '?ignore_notice=introlicense');
 					
 					echo '</p></div>';
 				}
@@ -441,3 +441,22 @@ if(!function_exists('intro_admin_notice')){
 	}
 }
 add_action('admin_notices', 'intro_admin_notice');
+
+/**
+ * Hide admin notice if the user isn't interested in the license.
+ *
+ * @since 1.0.1
+ * @return void
+ */
+if(!function_exists('intro_admin_ignore')){
+	function intro_admin_ignore() {
+	
+	    global $current_user;
+        $user_id = $current_user->ID;
+        /* If user clicks to ignore the notice, add that to their user meta */
+        if ( isset($_GET['ignore_notice']) && 'introlicense' == $_GET['ignore_notice'] ) {
+             add_user_meta($user_id, 'ignore_introlicense_notice', 'true', true);
+	    }
+	}
+}
+add_action('admin_init', 'intro_admin_ignore');
